@@ -20,21 +20,27 @@ describe('Employee class', () =>{
         expect(employee.email).toEqual('jon@gmail.com');
     })
 
-    it('should return the employee name', () => {
+    it('should return the employee name when using the function getName', () => {
         const employee = new Employee('Jonathon', 32423, 'jon@gmail.com');
 
         expect(employee.getName()).toBe('Jonathon');
     })
     
-    it('should return the employee id', () => {
+    it('should return the employee id when using the function getId', () => {
         const employee = new Employee('Jonathon', 32423, 'jon@gmail.com');
 
         expect(employee.getId()).toBe(32423);
     })
 
-    it('should return an email when using getemail', () => {
+    it('should return an email when using getEmail', () => {
         const employee = new Employee('Jonathon', 32423, 'jon@gmail.com');
 
         expect(employee.getEmail()).toBe('jon@gmail.com');
+    })
+
+    it('should return Employee when using getRole', () => {
+        const employee = new Employee('Jonathon', 32423, 'jon@gmail.com');
+
+        expect(employee.getRole()).toBe('Employee');
     })
 })
