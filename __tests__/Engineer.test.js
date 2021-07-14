@@ -47,7 +47,7 @@ describe('engineer class', () =>{
     it('should return the github name when the getGithub function is called', () => {
         const engineer = new Engineer('Jonathon', 32423, 'jon@gmail.com', 'RoomsieJones');
 
-        expect(engineer.getGithub()).toEqual('RoomsieJones');
+        expect(engineer.getGithub()).toBe('RoomsieJones');
     })
 
     it('should return engineer when using getRole', () => {
