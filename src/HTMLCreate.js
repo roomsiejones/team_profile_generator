@@ -90,22 +90,21 @@ class HTMLCreate {
           .join('');
       }
 
-    renderHtml(renderedCards) {
+      renderHtml(renderedCards) {
         return `
     <!DOCTYPE html>
     <html lang="en">
     <head>
       <meta charset="UTF-8">
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Employee Profiles</title>
     </head>
-    <body>
-      <div>
-        <h1>My Team</h1>
+    <body class="bg-info">
+      <div class="jumbotron bg-dark">
+        <h1 class="display-4 text-center text-white">My Team</h1>
       </div>
-      <div>
+      <div class="row row-cols-3 justify-content-center mx-auto" style="width: 75%">
         ${renderedCards}
       </div>
     </body>
