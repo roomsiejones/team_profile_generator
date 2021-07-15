@@ -65,7 +65,7 @@ npm run test
 
 
 
-![Video demonstrating the usage](https://drive.google.com/file/d/1zC8mCypD5BLkJmAS3DB8HAOoi6pZtwnJ/view)
+![Video demonstrating the usage](https://github.com/roomsiejones/team_profile_generator/blob/main/resources/team_gen_test.gif?raw=true)
 ## Questions
 To contact me or report issues, please email me at jonathonrenaud1988@gmail.com
 Go to https://github.com/RoomsieJones to view my github profile.    
