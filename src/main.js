@@ -153,4 +153,4 @@ class App {
           }
 }
 
-module.exports = main;
+module.exports = App;
