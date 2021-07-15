@@ -1,8 +1,8 @@
 const inquirer = require('inquirer');
 
-const Manager = require('../src/Manager.js');
-const Engineer = require('../src/Engineer.js');
-const Intern = require('../src/Intern.js');
+const Manager = require('../lib/Manager.js');
+const Engineer = require('../lib/Engineer.js');
+const Intern = require('../lib/Intern.js');
 const HTMLCreate = require('./HTMLCreate.js');
 
 class App {
@@ -144,9 +144,9 @@ class App {
           }
 
           async finish() {
-            const pageCreate = new HtmlGenerator();
+            const pageCreate = new HTMLCreate();
             try {
-              await pageCreate.createHtml(this.employees);
+              await pageCreate.createHTML(this.employees);
             } catch (error) {
               console.log('Couldn\'t write to HTML file: ' + error);
             }
